@@ -20,13 +20,16 @@ public class searchx {
 
         //find X
         int x = 10;
+        int found = 0;
         for(int i = 0 ; i<userin;i++){
             if (arr[i]==x){
                 System.out.println("found element"+ x);
-            } else if (arr[i]==arr[userin-1]){
-                System.out.println("element not found");
+                found = 1;
+                
             }
-
+            
+        } if (found==0){
+            System.out.println("element not found");
         }
 
 
